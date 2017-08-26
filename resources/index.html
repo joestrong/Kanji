@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanji</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="kanji-container">
+        {{#kanji}}
+        <div class="kanji {{user_specific.srs}}">
+            <div class="kanji-inner">
+                {{character}}
+            </div>
+        </div>
+        {{/kanji}}
+    </div>
+</body>
+</html>

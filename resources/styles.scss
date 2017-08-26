@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-size: 50px;
+}
+.kanji-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(10, 1fr);
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.kanji {
+  position: relative;
+  background: #aaa;
+  color: #fff;
+}
+.kanji:before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+}
+.kanji.burned { background: green; }
+.kanji.enlighten { background: lighten(green, 10%); }
+.kanji.master { background: lighten(green, 20%); }
+.kanji.guru { background: lighten(green, 30%); }
+.kanji.apprentice { background: lighten(green, 40%); }
+.kanji-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

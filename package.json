@@ -1,0 +1,19 @@
+{
+  "name": "kanji",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app/main.js",
+    "build": "node-sass resources/styles.scss | cleancss -o public/styles.css"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "mustache": "^2.3.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.1.6",
+    "node-sass": "^4.5.3"
+  }
+}
